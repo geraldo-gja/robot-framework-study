@@ -1,6 +1,7 @@
 *** Settings ***
-Resource    ../Resource/Settings.resource
-Resource    ../Elements/Main_Elements.resource
+Resource    ../../Resource/Settings.resource
+Resource    ../../Elements/Main_Elements.resource
+
 
 *** Keywords ***
 
@@ -9,7 +10,7 @@ Dado que eu acesse o php travels
     Maximize Browser Window
 
 E realize o cadastro
-    Wait Until Element Is Visible      ${Home.A_Signup}            10
+    Wait Until Element Is Visible      ${test}            10
     Click Element                      ${Home.A_Signup}
     Wait Until Element Is Visible      ${Login.Input_PrimeiroNome}  10
     Input Text                         ${Login.Input_PrimeiroNome}  ${PrimeiroNome}
@@ -29,13 +30,16 @@ E realize o cadastro
     Click Element                      ${Login.Button_Signup}
 
 E faça o Login
-    Wait Until Element Is Visible  ${Login.A_OpcaoLogin}      10
-    Click Element                  ${Login.A_OpcaoLogin} 
-    Wait Until Element Is Visible  ${Login.Input_EmailLogin}  10
-    Input Text                     ${Login.Input_EmailLogin}  ${Email}
-    Wait Until Element Is Visible  ${Login.Input_SenhaLogin}  10
-    Input Text                     ${Login.Input_SenhaLogin}  ${Senha}
-    Run Keyword And Ignore Error   Wait Until Element Is Visible  ${Login.Button_Cookie}     5
-    Run Keyword And Ignore Error   Click Element                  ${Login.Button_Cookie}
-    Wait Until Element Is Visible  ${Login.Button_Logar}      10
-    Click Element                  ${Login.Button_Logar} 
+    Wait Until Element Is Visible      ${Login.A_OpcaoLogin}        10
+    Click Element                      ${Login.A_OpcaoLogin} 
+    Wait Until Element Is Visible      ${Login.Input_EmailLogin}    10
+    Input Text                         ${Login.Input_EmailLogin}    ${Email}
+    Wait Until Element Is Visible      ${Login.Input_SenhaLogin}    10
+    Input Text                         ${Login.Input_SenhaLogin}    ${Senha}
+    Run Keyword And Ignore Error       Wait Until Element Is Visible    ${Login.Button_Cookie}     5
+    Run Keyword And Ignore Error       Click Element                    ${Login.Button_Cookie}
+    Wait Until Element Is Visible      ${Login.Button_Logar}        10
+    Click Element                      ${Login.Button_Logar} 
+
+E fecho o navegador
+    Close Browser
