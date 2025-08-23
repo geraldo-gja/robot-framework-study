@@ -1,0 +1,10 @@
+
+* O arquivo [travel.robot] é o arquivo de exercicio.
+
+* Fiz apenas os passos do vídeo
+* Não está executando pois o site do teste foi atualizado, 
+  eu preferi não terminar o exercicio nesse momento, pois já tenho minhas atividades na KS, projeto Control Tower
+
+* Pasta Estrutura_1: videos 10 e 11  (Tutorial 07, parte 1 e 2)
+
+* Pasta Estrutura_2: videos 12 e 13  (Melhor forma, parte 1 e 2)
