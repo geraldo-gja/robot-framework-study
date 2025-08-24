@@ -6,7 +6,7 @@ Resource          data/geral.robot
 Resource          data/rigistro.robot
 
 ### Shared ###
-
+Resource          shared/setup_teardown.robot
 
 ### Pages ###
 Resource          pages/home_page.robot

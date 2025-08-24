@@ -8,3 +8,14 @@
 * Pasta Estrutura_1: videos 10 e 11  (Tutorial 07, parte 1 e 2)
 
 * Pasta Estrutura_2: videos 12 e 13  (Melhor forma, parte 1 e 2)
+
+- - - 
+
+Comando para executar os testes:
+ - Estrutura 1: 
+     robot -d results TUTORIAL-07/Estrutura_1/Tests/Voo/TC01.robot
+ - Estrutura 2: 
+     Voo:   robot -d results TUTORIAL-07/Estrutura_2/suites/voo/voo.robot
+     VIsto: robot -d results TUTORIAL-07/Estrutura_2/suites/visto/visto.robot
+     TAG:   robot -d results -i VOO TUTORIAL-07/Estrutura_2/suites
+        obs: -i [tag]
